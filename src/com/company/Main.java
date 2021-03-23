@@ -2,11 +2,13 @@ package com.company;
 
 import com.company.ejercicio1.rectangle;
 import com.company.ejercicio2.employee;
+import com.company.ejercicio3.saleItem;
 
 public class Main {
 
     public static void main(String[] args) {
 
+        /////////////        /////////////
         //Ejercicio 1
         rectangle rectangle= new rectangle();
         System.out.println("Ancho: " + rectangle.getBroad());
@@ -19,6 +21,7 @@ public class Main {
         System.out.println("Area: " + rectangle.calculateArea());
         System.out.println("Perimetro: " + rectangle.calculatePerimeter());
 
+        /////////////        /////////////
         //Ejercicio 2
         //Inciso A
         employee employee1= new employee();
@@ -42,5 +45,22 @@ public class Main {
         //Inciso D
         employee1.increaseSalary(15);
         System.out.println("\nSalario anual aumentado: " + employee1.calculateAnnalSalary());
+
+        /////////////        /////////////
+        //Ejercicio 3
+        saleItem item1= new saleItem();
+
+        //Inciso A
+        item1.setId(1);
+        item1.setDescription("Fernet branca");
+        item1.setAmount(5);
+        item1.setUnitaryPrice(450);
+
+        //Inciso B
+        System.out.println(item1.getSaleItem());
+
+        /////////////        /////////////
+        //Ejercicio 4
+
     }
 }
