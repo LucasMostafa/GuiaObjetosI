@@ -58,6 +58,6 @@ public class employee {
     }
 
     public String getEmployee(){
-        return "\nEmpleado: \nDNI: " + this.dni + "\nNombre: " + this.name + "\nApellido: " + this.surname + "\nSalario: " + this.salary;
+        return "Empleado || DNI: " + this.dni + " | Nombre: " + this.name + " | Apellido: " + this.surname + " | Salario: " + this.salary;
     }
 }

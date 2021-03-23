@@ -3,6 +3,7 @@ package com.company;
 import com.company.ejercicio1.rectangle;
 import com.company.ejercicio2.employee;
 import com.company.ejercicio3.saleItem;
+import com.company.ejercicio4.bankAccount;
 
 public class Main {
 
@@ -44,7 +45,7 @@ public class Main {
 
         //Inciso D
         employee1.increaseSalary(15);
-        System.out.println("\nSalario anual aumentado: " + employee1.calculateAnnalSalary());
+        System.out.println("Salario anual aumentado: " + employee1.calculateAnnalSalary());
 
         /////////////        /////////////
         //Ejercicio 3
@@ -61,6 +62,24 @@ public class Main {
 
         /////////////        /////////////
         //Ejercicio 4
+        //Inciso 1
+        bankAccount account1= new bankAccount();
+
+        account1.setBalance(15000);
+        account1.setId(19);
+        account1.setName("Lucas Mostafa");
+        System.out.println(account1.getBankAccount());
+
+        //Inciso 2
+        account1.credit(2500);
+        System.out.println(account1.getBankAccount());
+
+        //Inciso 3
+        account1.debit(1500);
+        System.out.println(account1.getBankAccount());
+
+        //Inciso 4
+        account1.debit(30000);
 
     }
 }

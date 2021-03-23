@@ -53,6 +53,6 @@ public class saleItem {
     }
 
     public String getSaleItem(){
-        return "\nItem venta:\nId: " + this.id + "\nDescripcion: " + this.description + "\nCantidad: " + this.amount + "\nPrecio unitario: " + this.unitaryPrice + "\nPrecio total: " + calculateTotalPrice();
+        return "Item venta || Id: " + this.id + " | Descripcion: " + this.description + "| Cantidad: " + this.amount + " | Precio unitario: " + this.unitaryPrice + " | Precio total: " + calculateTotalPrice();
     }
 }
